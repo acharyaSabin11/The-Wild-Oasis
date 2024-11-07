@@ -17,7 +17,6 @@ function UpdateUserForm() {
 
   const [fullName, setFullName] = useState(user.user_metadata.fullName);
   const [avatar, setAvatar] = useState(null);
-  console.log(avatar);
 
   function reset() {
     setFullName(user.user_metadata.fullName);

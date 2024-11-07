@@ -6,7 +6,7 @@ import {
   formatDistanceFromNow,
   subtractDates,
 } from "../../utils/helpers";
-import { HiArrowSmRight, HiMinus, HiPencil, HiTrash } from "react-icons/hi";
+import { HiArrowSmRight, HiMinus, HiTrash } from "react-icons/hi";
 import ContextMenu from "../../ui/ContextMenu";
 import { useNavigate } from "react-router-dom";
 import BookingStatus from "../../ui/BookingStatus";
@@ -63,7 +63,6 @@ function BookingsRow({ booking }) {
     totalPrice,
     id,
   } = booking;
-  console.log(id);
   const { checkOut, isCheckingOut } = useCheckOut(Number(id));
   const { deleteBooking, isDeletingBooking } = useDeleteBooking(id);
   return (

@@ -68,8 +68,6 @@ function TodaysActivity() {
   if (todaysActivitiesError)
     return <Screen>Failed to load Today &apos; Activities</Screen>;
 
-  console.log(todaysActivities);
-
   return (
     <StyledTodaysActivity>
       <Title>{"Today's Activity"}</Title>

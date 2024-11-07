@@ -15,7 +15,6 @@ function Addbreakfast({ bookingData }) {
   const { updateBooking, isUpdating } = useBookingsUpdate(id);
 
   function changeHandler(e) {
-    console.log(e.target.checked);
     updateBooking(
       { isPaid: false, hasBreakfast: e.target.checked },
       {

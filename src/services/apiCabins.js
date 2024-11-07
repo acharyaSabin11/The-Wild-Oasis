@@ -85,13 +85,11 @@ async function uploadCabinPhoto(image) {
 }
 
 async function deleteCabins(id) {
-    console.log(id);
     console.log('Hello');
     const { error } = await supabase
         .from('cabins')
         .delete()
         .eq('id', id);
-    console.log(error);
     if (error) {
         console.log(error);
         throw new Error("Couldn't delete the cabin.");

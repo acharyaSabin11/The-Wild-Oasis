@@ -40,7 +40,6 @@ export async function getBookingById(id) {
 }
 
 export async function updateBookingData(id, updateValue) {
-    console.log(id, updateValue);
     const { data, error } = await supabase.from('bookings').update(updateValue).eq('id', id).single();
 
     if (error) {

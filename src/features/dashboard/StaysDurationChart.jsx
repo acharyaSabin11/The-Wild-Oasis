@@ -95,7 +95,6 @@ function StaysDurationChart() {
     count: duration[1],
   }));
 
-  console.log(data);
   return (
     <StyledStaysDurationChart>
       <Title>Stay Durations</Title>

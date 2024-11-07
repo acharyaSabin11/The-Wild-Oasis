@@ -27,7 +27,6 @@ function Booking() {
   const { bookingData, bookingError, bookingIsLoading } =
     useBookingDataById(bookingId);
   const { checkOut, isCheckingOut } = useCheckOut(bookingId);
-  console.log(bookingData);
   const { deleteBooking, isDeleting } = useDeleteBooking(bookingId);
   const { status: bookingStatus } = bookingData;
 
