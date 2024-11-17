@@ -4,7 +4,6 @@ import {
   formatCurrency,
   formatDate,
   formatDistanceFromNow,
-  subtractDates,
 } from "../../utils/helpers";
 import { HiArrowSmRight, HiMinus, HiTrash } from "react-icons/hi";
 import ContextMenu from "../../ui/ContextMenu";
@@ -61,6 +60,7 @@ function BookingsRow({ booking }) {
     endDate,
     status,
     totalPrice,
+    numNights,
     id,
   } = booking;
   const { checkOut, isCheckingOut } = useCheckOut(Number(id));
@@ -76,7 +76,7 @@ function BookingsRow({ booking }) {
         <Highlight>
           {formatDistanceFromNow(startDate)}
           <HiArrowSmRight />
-          {`${subtractDates(endDate, startDate)} Nights Stay`}
+          {`${numNights} Nights Stay`}
         </Highlight>
         <Shadow>
           {formatDate(startDate)}
