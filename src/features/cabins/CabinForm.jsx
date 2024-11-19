@@ -124,6 +124,7 @@ function CabinForm({ type, cabinToEdit, setEditId, onCLoseModal }) {
         <label htmlFor="image">Cabin Photo</label>
         <FileInput
           disabled={isCreating || isEditing}
+          accept="image/png, image/jpeg, image/gif"
           type="file"
           id="image"
           {...register("image")}

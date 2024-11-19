@@ -10,7 +10,6 @@ const StyledModal = styled.div`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -30,7 +29,7 @@ const OverLay = styled.div`
 
 const ModalButton = styled.button`
   background-color: var(--color-brand-700);
-  color: var(--color-grey-0);
+  color: var(--color-brand-100);
   font-weight: 700;
   height: 3rem;
   width: 3rem;

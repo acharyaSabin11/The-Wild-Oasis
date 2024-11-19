@@ -94,10 +94,11 @@ function UpdateUserForm() {
         {errors?.fullName && <FormError>{errors.fullName}</FormError>}
       </FormRow>
       <FormRow>
-        <label htmlFor="avatar">Cabin Photo</label>
+        <label htmlFor="avatar">Your Photo</label>
         <FileInput
           disabled={isUpdating}
           type="file"
+          accept="image/png, image/jpg, image/gif"
           id="avatar"
           onChange={(e) => {
             setAvatar(e.target.files[0]);

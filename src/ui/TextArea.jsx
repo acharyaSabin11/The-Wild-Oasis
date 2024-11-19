@@ -8,6 +8,8 @@ const TextArea = styled.textarea`
   max-height: 10rem;
   width: 100%;
   max-width: 30rem;
+  background-color: var(--color-grey-100);
+  color: var(--color-grey-700);
 
   &::-webkit-scrollbar {
     display: none;
